@@ -5,7 +5,7 @@ from telebot.types import Message, CallbackQuery
 import city
 import sys
 
-TOKEN = ''
+TOKEN = '5391472539:AAH5UhBSLBS6_chcpx9CnAYmQtBqr0KUzeA'
 STICKER = 'CAACAgIAAxkBAAEEmItibWWmYse06mEr_adCd7Dd6i7HcQACBQADwDZPE_lqX5qCa011JAQ'
 
 bot = telebot.TeleBot(TOKEN)
