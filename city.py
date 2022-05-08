@@ -2,15 +2,12 @@ from typing import Dict, List, Any
 
 from bs4 import BeautifulSoup
 import requests
-
+import magicconstants as mc
 
 def parse(city: str):
-    URL = 'https://sinoptik.ua/погода-' + city.lower()
-    HEADERS = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-                      ' AppleWebKit/537.36 (KHTML, like Gecko)'
-                      ' Chrome/81.0.4044.138 Safari/537.36'
-    }
+    """Запрос в gson-data"""
+    URL = mc.site + city.lower()
+    HEADERS=mc.HEADERS
 
     response = requests.get(URL, headers=HEADERS)
     soup = BeautifulSoup(response.content, 'html.parser')
