@@ -6,3 +6,4 @@ HEADERS = {
                       ' AppleWebKit/537.36 (KHTML, like Gecko)'
                       ' Chrome/81.0.4044.138 Safari/537.36'
     }
+details = "Детальнее"
