@@ -1,10 +1,9 @@
-import city
+import src.city
 import telebot
 import time
 from telebot import types
 from telebot.types import Message, CallbackQuery
-import city
-import magicconstants as mc
+import src.magicconstants as mc
 
 from os import environ
 
@@ -18,9 +17,7 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start'])
 def start(message: Message) -> None:
     """Запускается при старте бота"""
-    Greeting = f"Привет <b>{message.from_user.first_name}</b>, " \
-               f"Выбери город и предоставлю тебе прогноз."
-
+    Greeting = mc.greeting
     if message.text == "/start":
         bot.send_sticker(message.chat.id, STICKER)
         bot.send_message(message.chat.id, Greeting, parse_mode='html')

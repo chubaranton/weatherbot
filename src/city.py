@@ -2,7 +2,7 @@ from typing import Dict, List, Any
 
 from bs4 import BeautifulSoup
 import requests
-import magicconstants as mc
+import src.magicconstants as mc
 
 def parse(city: str):
     """Запрос в gson-data"""
