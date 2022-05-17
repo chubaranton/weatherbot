@@ -11,3 +11,4 @@ How to run (we take the token from the virtual environment)
     $ export API_KEY=<your token>
     $ python bot.py
 
+![](https://github.com/chubaranton/weatherbot/blob/dev/picture/fGQyemH__6tXUqPqOEC93d6ZjrcPuZJ5jnzgRl7mm3qoWkOd5lTaK0kKSfquHjwi9qexyYf5H5MtYa6BFu9Dobx6.jpg)
