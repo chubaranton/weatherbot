@@ -1,11 +1,12 @@
 import src.city
-import telebot
-import time
-from telebot import types
-from telebot.types import Message, CallbackQuery
 import src.magicconstants as mc
 
+import telebot
+import time
+
 from os import environ
+from telebot import types
+from telebot.types import Message, CallbackQuery
 
 
 TOKEN = environ.get("API_KEY")
